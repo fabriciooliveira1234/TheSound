@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "487756116461",
+    "project_id": "thesoundapp-73fe1",
+    "storage_bucket": "thesoundapp-73fe1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487756116461:android:601699fd4a98afa1b0b7e4",
+        "android_client_info": {
+          "package_name": "com.example.thesound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487756116461-24ipio9frv0ebj3obj8d96fvnag3agp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC7PMsXo9WWMPy8irL6AOqRrs8vS4sZCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487756116461-24ipio9frv0ebj3obj8d96fvnag3agp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

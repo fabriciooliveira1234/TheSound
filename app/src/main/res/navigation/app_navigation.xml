@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.thesound.signIn.signInFragment"
+        android:label="sign_in_fragment"
+        tools:layout="@layout/sign_in_fragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.thesound.dashboard.DashBoardFragment"
+        android:label="dash_board_fragment"
+        tools:layout="@layout/dash_board_fragment" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_radioFragment"
+            app:destination="@id/radioFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_eventosFragment"
+            app:destination="@id/eventosFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_chatFragment2"
+            app:destination="@id/chatFragment2" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_lyricsApiFragment"
+            app:destination="@id/lyricsApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.thesound.radio.RadioFragment"
+        android:label="radio_fragment"
+        tools:layout="@layout/radio_fragment" />
+    <fragment
+        android:id="@+id/eventosFragment"
+        android:name="com.example.thesound.eventos.EventosFragment"
+        android:label="eventos_fragment"
+        tools:layout="@layout/eventos_fragment" >
+        <action
+            android:id="@+id/action_eventosFragment_to_generoAddFragment"
+            app:destination="@id/generoAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generoAddFragment"
+        android:name="com.example.thesound.addEventos.EventoAddFragment"
+        android:label="genero_add_fragment"
+        tools:layout="@layout/evento_add_fragment" />
+    <fragment
+        android:id="@+id/chatFragment2"
+        android:name="com.example.thesound.chat.chatFragment"
+        android:label="chat_fragment"
+        tools:layout="@layout/chat_fragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.thesound.signup.SignUpFragment"
+        android:label="sign_up_fragment"
+        tools:layout="@layout/sign_up_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.thesound.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/lyricsApiFragment"
+        android:name="com.example.thesound.api.LyricsApiFragment"
+        android:label="lyrics_api_fragment"
+        tools:layout="@layout/lyrics_api_fragment" >
+        <action
+            android:id="@+id/action_lyricsApiFragment_to_lyricApiShowFragment"
+            app:destination="@id/lyricApiShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lyricApiShowFragment"
+        android:name="com.example.thesound.showApiLyrics.LyricApiShowFragment"
+        android:label="lyric_api_show_fragment"
+        tools:layout="@layout/lyric_api_show_fragment" />
+</navigation>

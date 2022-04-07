@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".profile.ProfileFragment" >
+
+    <ImageView
+        android:id="@+id/imgPerfilFoto"
+        android:layout_width="245dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/Container_Components"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerfilFoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editTxtPerfilEndereco"
+        style="@style/Edit_Text"
+        android:hint="Endereço"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+    <EditText
+        android:id="@+id/editTxtPerfilIdade"
+        style="@style/Edit_Text"
+        android:hint="Idade"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/editTxtPerfilEndereco" />
+
+    <EditText
+        android:id="@+id/editTxtPerfilMusica"
+        style="@style/Edit_Text"
+        android:hint="Artista Preferido"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/editTxtPerfilIdade" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSalvarPerfil"
+        style="@style/Button"
+        android:layout_marginTop="30dp"
+        android:text="Salvar
+"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponents" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".dashboard.DashBoardFragment">
+
+    <ImageButton
+        android:id="@+id/dashboardBatePapo"
+        android:layout_width="191dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/batepap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardEventos" />
+
+    <ImageButton
+        android:id="@+id/dashboardEventos"
+        android:layout_width="185dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/event"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dashboardLyrcsApi"
+        android:layout_width="164dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/lyrics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/dashboardEventos"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardEventos" />
+
+    <ImageButton
+        android:id="@+id/dashboardRadio"
+        android:layout_width="384dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/radios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dashboardSair"
+        android:layout_width="99dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/sair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardRadio"
+        app:layout_constraintVertical_bias="0.896" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
